@@ -11,7 +11,7 @@ face_classifier = cv2.CascadeClassifier(r'haarcascade_frontalface_default.xml')
 classifier =load_model(r'model.h5')
 
 emotion_labels = ['Angry','Disgust','Fear','Happy','Neutral', 'Sad', 'Surprise']
-st.title("Face_Recognitions_APP")
+st.title("Facial_Expressions_Recognition_APP")
 #st.text("Build with Streamlit and OpenCV")
 if "photo" not in st.session_state:
 	st.session_state["photo"]="not done"
